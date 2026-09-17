@@ -15,3 +15,60 @@ npm run dev / ejecucion del proyecto
 /////Next.js
 - Local: http://localhost:3000 //// deberiamos ver algo asi en pantalla y lo ejecutamos en la web , si nos aparece la pantalla de node.js la instalacion es correcta
 - 
+librerias utilizadas:
+npm install axios  // axios para la comunicacion de la API
+
+npm install @tanstack/react-query // react query para consultas
+npm install lucide-react
+
+npm install uuid
+npm install -D @types/uuid // pra identificadores o etiquetas
+
+
+vamos a seccionar nuestro proyecto en diferentes carpetas para una mejor identificacion
+
+src/
+│
+├── app/
+│   │
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   │
+│   ├── dashboard/
+│   │   └── page.tsx
+│   │
+│   ├── labeling/
+│   │   └── page.tsx
+│   │
+│   ├── objects/
+│   │   └── page.tsx
+│   │
+│   └── monitoring/
+│       └── page.tsx
+│
+├── components/
+│   ├── ui/
+│   ├── dashboard/
+│   ├── labeling/
+│   ├── monitoring/
+│   └── objects/
+│
+├── lib/
+│   ├── api.ts
+│   └── utils.ts
+│
+├── services/
+│   ├── recognition.service.ts
+│   ├── labeling.service.ts
+│   └── objects.service.ts
+│
+├── types/
+│   ├── api.ts
+│   ├── recognition.ts
+│   └── objects.ts
+│
+└── hooks/
+    ├── useRecognition.ts
+    ├── useObjects.ts
+    └── useLabeling.ts
