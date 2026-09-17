@@ -72,3 +72,5 @@ src/
     ├── useRecognition.ts
     ├── useObjects.ts
     └── useLabeling.ts
+
+api.ts es el archivo que tulizamos para la creacion del cliente de api
